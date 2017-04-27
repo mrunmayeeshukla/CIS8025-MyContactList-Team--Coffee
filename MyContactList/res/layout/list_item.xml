@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textContactName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="52dp"
+        android:text="Contact Name"
+        android:textColor= "@color/system_blue"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/textStreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textContactName"
+        android:layout_marginLeft="15sp"
+        android:text="Address:"
+       
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        
+        android:visibility="visible" />
+    <TextView
+        android:id="@+id/textCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textContactName"
+        android:layout_marginLeft="120sp"
+        android:text="City"
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:visibility="visible" />
+    <TextView
+        android:id="@+id/textState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textContactName"
+        android:layout_marginLeft="180sp"
+        android:text="State"
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textZip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textContactName"
+        android:layout_marginLeft="250sp"
+        android:text="Zip"
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        
+        android:visibility="visible" />
+ 
+
+    <Button
+		android:id= "@+id/buttonDeleteContact"
+		style= "?android:attr/buttonStyleSmall"
+		android:layout_width= "wrap_content"
+		android:layout_height= "wrap_content"
+		android:layout_alignParentTop= "true"
+		android:layout_marginTop= "10dp"
+		android:layout_alignParentRight= "true"
+		android:layout_marginRight= "10dp"
+		android:layout_toLeftOf= "@+id/textContinue"
+		android:textColor= "@color/system_red"
+		android:background= "@color/system_white"
+		android:visibility= "visible"
+		android:focusable= "false"
+		android:focusableInTouchMode= "false"
+		android:text= "Delete" />
+
+    <TextView
+        android:id="@+id/textHome1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textStreet"
+        android:layout_marginLeft="15sp"
+        android:text="Home:"
+        android:visibility="visible" />
+	  <TextView
+        android:id="@+id/textCell1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+         android:layout_below="@+id/textHome1"
+        android:text="Cell:"
+        android:visibility="visible" />
+    <TextView
+        android:id="@+id/textPhoneNumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textHome1"
+        android:layout_alignBottom="@+id/textHome1"
+        android:layout_toRightOf="@+id/textHome1"
+        android:text="Home"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textPhoneNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textCell1"
+        android:layout_alignBaseline="@+id/textCell1"
+        android:layout_alignBottom="@+id/textCell1"
+        android:text="Cell"
+        android:visibility="visible" />
+
+  
+ 
+</RelativeLayout>
